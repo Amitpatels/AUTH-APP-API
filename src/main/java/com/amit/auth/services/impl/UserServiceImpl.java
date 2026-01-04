@@ -1,10 +1,11 @@
-package com.amit.auth.services;
+package com.amit.auth.services.impl;
 
 import com.amit.auth.dtos.UserDto;
 import com.amit.auth.entites.User;
 import com.amit.auth.enums.Provider;
 import com.amit.auth.exceptions.ResourceNotFoundException;
 import com.amit.auth.repositories.UserRepository;
+import com.amit.auth.services.UserService;
 import com.amit.auth.utility.UserHelper;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
