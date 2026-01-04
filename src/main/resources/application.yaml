@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: auth-app-backend
+
+  # profiles:
+  #   active: dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_auth_app
+    username: root
+    password: root@12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
